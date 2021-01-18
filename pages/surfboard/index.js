@@ -1,7 +1,10 @@
 import Head from "next/head";
 import Link from "next/link";
+import axios from "axios";
+import companyUrl from "../../constants";
 
-function Surfboard() {
+function Surfboard(props) {
+  let surfboard = props.surfboard[0];
   return (
     <div>
       <Head>
@@ -21,5 +24,25 @@ function Surfboard() {
     </div>
   );
 }
+
+export const getStaticProps = async () => {
+  // await axios
+  //   .get(companyUrl + "surfboard.json")
+  //   .then((response) => {
+  //     return response;
+  //   })
+  //   .then((data) => {
+  //     console.log(data.data);
+  //   })
+  //   .catch((err) => {
+  //     console.log(err);
+  //   });
+  let { data } = await axios.get(companyUrl + "surfboard.json");
+  return {
+    props: {
+      surfboard: [...data],
+    },
+  };
+};
 
 export default Surfboard;

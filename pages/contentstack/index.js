@@ -1,6 +1,9 @@
 import Head from "next/head";
+import axios from "axios";
+import companyUrl from "../../constants";
 
-function Contentstack() {
+function Contentstack(props) {
+  let contentstack = props.contentstack[0];
   return (
     <div>
       <Head>
@@ -12,5 +15,14 @@ function Contentstack() {
     </div>
   );
 }
+
+export const getStaticProps = async () => {
+  let { data } = await axios.get(companyUrl + "contentstack.json");
+  return {
+    props: {
+      contentstack: [...data],
+    },
+  };
+};
 
 export default Contentstack;

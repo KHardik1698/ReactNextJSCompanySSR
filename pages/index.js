@@ -6,6 +6,7 @@ function Home() {
     <div>
       <Head>
         <title>Company</title>
+        <link rel="icon" href="/logo-white.png" />
       </Head>
       <div>
         <h1>Home</h1>

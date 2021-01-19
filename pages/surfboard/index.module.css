@@ -1,0 +1,103 @@
+.header {
+  height: 90vh;
+  margin-bottom: 10vh;
+}
+.navigation {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+.company-logo {
+  width: 25vh;
+  height: 10vh;
+  margin: 2vh 10vh;
+}
+.nav-links {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  margin: 2vh 10vh;
+  font-size: 15px;
+}
+.nav-item {
+  margin: 2vh;
+}
+.banner {
+  display: flex;
+  justify-content: space-between;
+}
+.banner-text {
+  margin: 5vh 15vh;
+}
+.banner-title {
+  font-size: 50px;
+}
+.banner-subtitle {
+  font-size: 25px;
+  width: 60%;
+}
+.section-heading {
+  font-size: 30px;
+  text-align: center;
+}
+.portfolio-container {
+  display: flex;
+  align-items: center;
+  margin: 0px 5vh;
+  margin-bottom: 10vh;
+}
+.portfolio-image {
+  width: 90vh;
+  height: 60vh;
+  margin: 0px 5vh;
+}
+.company-name {
+  font-size: 30px;
+}
+.company-description {
+  font-size: 18px;
+}
+.team-container {
+  width: 80%;
+  margin: 5vh auto;
+  display: flex;
+  align-items: center;
+}
+.team-image {
+  width: 40vh;
+  height: 40vh;
+  margin: 5vh;
+  border-radius: 3%;
+}
+.team-text {
+  margin: 5vh;
+}
+.team-name {
+  font-size: 30px;
+}
+.team-message {
+  font-size: 16px;
+}
+.philosophy-container {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  padding: 30px;
+  justify-content: space-evenly;
+}
+.philosophy-content {
+  margin: 0px 10vh;
+}
+.philosophy-image {
+  width: 20vh;
+  height: 20vh;
+}
+.philosophy-title {
+  min-height: 10vh;
+}
+.copyright {
+  text-align: center;
+  padding-bottom: 10vh;
+}

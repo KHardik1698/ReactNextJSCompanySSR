@@ -13,6 +13,14 @@ function RawEngineering(props) {
         <h1>Raw Engineering</h1>
       </div>
       <div>
+        <img src={rawEngineering.rawEngineeringLogo} alt="" />
+        {rawEngineering.navigationLinks.map((link, i) => {
+          return (
+            <div key={i}>
+              <p>{link}</p>
+            </div>
+          );
+        })}
         <p>{rawEngineering.title}</p>
         <p>{rawEngineering.subtitle}</p>
         <p>{rawEngineering.shortIntro}</p>

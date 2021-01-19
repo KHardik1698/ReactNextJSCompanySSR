@@ -1,0 +1,21 @@
+.home-container {
+  height: 100vh;
+  background: no-repeat center
+    url("https://image.freepik.com/free-photo/grey-geometrical-shapes-background_23-2148811539.jpg");
+  background-size: 200vh;
+}
+.logo-container {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 10%;
+}
+.company {
+  text-align: center;
+  color: white;
+}
+.logo-image {
+  width: 10vh;
+  height: 10vh;
+}

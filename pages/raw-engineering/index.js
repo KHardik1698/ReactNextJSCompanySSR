@@ -33,7 +33,9 @@ function RawEngineering(props) {
               <p className={styles["banner-title"]}>{rawEngineering.title}</p>
               <p className={styles["banner-subtitle"]}>{rawEngineering.subtitle}</p>
             </div>
-            <img className={styles["banner-image"]} src={rawEngineering.bannerImage} alt="Banner" />
+            <div className={styles["banner-image"]}>
+              <img src={rawEngineering.bannerImage} alt="Banner" />
+            </div>
           </div>
         </div>
       </div>
@@ -81,9 +83,11 @@ function RawEngineering(props) {
                   src={testimony.imageUrl}
                   alt="Testimony"
                 />
-                <p>{testimony.name}</p>
-                <p>{testimony.companyName}</p>
-                <p>"{testimony.message}"</p>
+                <div className={styles["testimonial-text"]}>
+                  <p>{testimony.name}</p>
+                  <p>{testimony.companyName}</p>
+                  <p>"{testimony.message}"</p>
+                </div>
               </div>
             );
           })}

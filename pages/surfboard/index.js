@@ -3,6 +3,13 @@ import Link from "next/link";
 import axios from "axios";
 import companyUrl from "../../constants";
 import styles from "./index.module.css";
+import {
+  FaFacebookSquare,
+  FaLinkedin,
+  FaTwitterSquare,
+  FaYoutubeSquare,
+  FaInstagramSquare,
+} from "react-icons/fa";
 
 function Surfboard(props) {
   let surfboard = props.surfboard[0];
@@ -15,6 +22,9 @@ function Surfboard(props) {
         <nav className={styles["navigation"]}>
           <img className={styles["company-logo"]} src={surfboard.surfboardLogo} alt="Logo" />
           <div className={styles["nav-links"]}>
+            <Link href="/">
+              <p className={styles["nav-item"]}>Home</p>
+            </Link>
             <Link href="/raw-engineering">
               <p className={styles["nav-item"]}>Raw Engineering</p>
             </Link>
@@ -85,7 +95,29 @@ function Surfboard(props) {
           </div>
         </div>
         <footer className={styles["footer-container"]}>
-          <img className={styles["company-logo"]} src={surfboard.surfboardLogo} alt="Logo" />
+          <div className={styles["footer-content"]}>
+            <img className={styles["company-logo"]} src={surfboard.surfboardLogo} alt="Logo" />
+            <div>
+              <p>Portfolio</p>
+              <p>Academy</p>
+              <p>Events</p>
+            </div>
+            <div>
+              <p>Gallery</p>
+              <p>e-Certificates</p>
+              <p>Contact Us</p>
+            </div>
+            <div>
+              <p>info@surfboardventures.com</p>
+            </div>
+            <div>
+              <FaFacebookSquare className={styles["icon"]} size="5vh" color="black" />
+              <FaLinkedin className={styles["icon"]} size="5vh" color="black" />
+              <FaTwitterSquare className={styles["icon"]} size="5vh" color="black" />
+              <FaYoutubeSquare className={styles["icon"]} size="5vh" color="black" />
+              <FaInstagramSquare className={styles["icon"]} size="5vh" color="black" />
+            </div>
+          </div>
           <p className={styles["copyright"]}>
             Copyright © 2021 Surfboard Ventures. All Rights Reserved.
           </p>

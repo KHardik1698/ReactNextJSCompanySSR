@@ -18,7 +18,7 @@
   flex-direction: row;
   flex-wrap: wrap;
   align-content: center;
-  margin: 2vh 10vh;
+  margin: 2vh 5vh;
   font-size: 15px;
 }
 .nav-item {
@@ -96,6 +96,11 @@
 }
 .philosophy-title {
   min-height: 10vh;
+}
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  margin: 10vh 5vh;
 }
 .copyright {
   text-align: center;

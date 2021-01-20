@@ -108,3 +108,120 @@
   text-align: center;
   padding-bottom: 10vh;
 }
+@media (max-width: 900px) {
+  .nav-links {
+    flex-direction: column;
+  }
+  .portfolio-container,
+  .team-container,
+  .philosophy-container,
+  .footer-content {
+    flex-direction: column;
+  }
+  .portfolio-image {
+    width: 45vh;
+    height: 30vh;
+  }
+  .footer-content {
+    align-items: center;
+  }
+}
+@media (max-width: 650px) {
+  .company-logo {
+    margin: auto;
+  }
+  .navigation {
+    flex-direction: column;
+  }
+  .nav-links {
+    flex-direction: row;
+    margin: auto;
+  }
+  .banner-text {
+    margin: 2vh;
+  }
+}
+@media (max-width: 500px) {
+  .banner-title {
+    font-size: 40px;
+  }
+  .banner-subtitle {
+    width: 100%;
+  }
+  .banner-subtitle,
+  .section-heading,
+  .company-name,
+  .team-name,
+  .philosophy-title {
+    font-size: 20px;
+  }
+  .company-description,
+  .team-message,
+  .philosophy-message {
+    font-size: 15px;
+  }
+}
+@media (max-width: 300px) {
+  .banner-title {
+    font-size: 20px;
+  }
+  .banner-subtitle {
+    font-size: 15px;
+    margin: 0;
+  }
+  .portfolio-image {
+    width: 20vh;
+    height: 12vh;
+    margin: auto;
+  }
+  .team-image {
+    width: 20vh;
+    height: 20vh;
+    margin: auto;
+  }
+  .team-text {
+    margin: auto;
+  }
+  .philosophy-container {
+    padding: 0px;
+  }
+  .philosophy-content {
+    margin: auto 2vh;
+  }
+  .footer-content {
+    margin: auto;
+    text-align: center;
+  }
+}
+@media (max-width: 200px) {
+  .company-logo {
+    width: 15vh;
+  }
+  .banner-title,
+  .section-heading,
+  .company-name,
+  .team-name,
+  .philosophy-title {
+    font-size: 15px;
+  }
+  .company-description,
+  .team-message,
+  .philosophy-message {
+    font-size: 12px;
+  }
+  .team-image,
+  .philosophy-image {
+    width: 10vh;
+    height: 10vh;
+  }
+  .portfolio-container {
+    margin: auto;
+  }
+  .portfolio-image {
+    width: 15vh;
+    height: 8vh;
+  }
+  .footer-content {
+    font-size: 8px;
+  }
+}

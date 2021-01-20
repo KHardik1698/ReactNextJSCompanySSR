@@ -88,7 +88,7 @@ function Surfboard(props) {
                 <div className={styles["philosophy-content"]} key={i}>
                   <img className={styles["philosophy-image"]} src={philosophy.image} alt="" />
                   <p className={styles["philosophy-title"]}>{philosophy.title}</p>
-                  <p>{philosophy.content}</p>
+                  <p className={styles["philosophy-message"]}>{philosophy.content}</p>
                 </div>
               );
             })}

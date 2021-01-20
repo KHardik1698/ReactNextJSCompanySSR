@@ -9,7 +9,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  padding: 10%;
+  padding: 20vh;
 }
 .company {
   text-align: center;
@@ -18,4 +18,18 @@
 .logo-image {
   width: 10vh;
   height: 10vh;
+}
+@media (max-width: 350px) {
+  .logo-container {
+    padding: 10vh 0px;
+  }
+}
+@media (max-width: 150px) {
+  .company {
+    font-size: 8px;
+  }
+  .logo-image {
+    width: 5vh;
+    height: 5vh;
+  }
 }

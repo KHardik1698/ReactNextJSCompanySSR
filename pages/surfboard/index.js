@@ -111,11 +111,11 @@ function Surfboard(props) {
               <p>info@surfboardventures.com</p>
             </div>
             <div>
-              <FaFacebookSquare className={styles["icon"]} size="5vh" color="black" />
-              <FaLinkedin className={styles["icon"]} size="5vh" color="black" />
-              <FaTwitterSquare className={styles["icon"]} size="5vh" color="black" />
-              <FaYoutubeSquare className={styles["icon"]} size="5vh" color="black" />
-              <FaInstagramSquare className={styles["icon"]} size="5vh" color="black" />
+              <FaFacebookSquare size="5vh" color="black" />
+              <FaLinkedin size="5vh" color="black" />
+              <FaTwitterSquare size="5vh" color="black" />
+              <FaYoutubeSquare size="5vh" color="black" />
+              <FaInstagramSquare size="5vh" color="black" />
             </div>
           </div>
           <p className={styles["copyright"]}>

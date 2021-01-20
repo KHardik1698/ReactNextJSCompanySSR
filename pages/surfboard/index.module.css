@@ -27,12 +27,14 @@
 .banner {
   display: flex;
   justify-content: space-between;
+  font-family: "Gilroy-Medium";
 }
 .banner-text {
   margin: 5vh 15vh;
 }
 .banner-title {
   font-size: 50px;
+  font-weight: 600;
 }
 .banner-subtitle {
   font-size: 25px;
